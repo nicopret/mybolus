@@ -1,0 +1,11 @@
+FlexboxLayout {
+    align-items: center;
+    background-size: cover;
+    justify-content: center;
+}
+
+StackLayout {
+    background-color: #f0f0f0;
+    padding: 10 16;
+    width: 300;
+}
