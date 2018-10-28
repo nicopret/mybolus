@@ -23,6 +23,23 @@ export class UserService {
         return Observable.throw(error);
     }
 
+    login(user: User) {
+        return this.http.post(
+            Config.apiUrl + "user/" + Config.appKey + "/login",
+            JSON.stringify({
+                username: user.email,
+                password: user.password
+            }),
+            { headers: this.getCommonHeaders() }
+        ).pipe(
+            map((response) => response.json()),
+            tap(data => {
+                Config.token = data._kmd.authtoken
+            }),
+            catchError(this.handleErrors)
+        );
+    }
+
     register(user: User) {
         return this.http.post(
             Config.apiUrl + "user/" + Config.appKey,
