@@ -7,9 +7,15 @@ import { Component } from "@angular/core";
     templateUrl: "login.component.html"
 })
 export class LoginComponent {
+    email = "niconchat@yahoo.com";
+    isLoggingIn = true;
 
     submit() {
-        console.log('hello');
+        alert(`You are using: ${this.email}`);
+    }
+
+    toggleDisplay() {
+        this.isLoggingIn = !this.isLoggingIn;
     }
     
 }
