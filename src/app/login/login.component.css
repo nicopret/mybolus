@@ -4,6 +4,7 @@ Button, TextField {
 
 FlexboxLayout {
     align-items: center;
+    background-image: url("~/images/background.jpg");
     background-size: cover;
     justify-content: center;
 }
