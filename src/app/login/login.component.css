@@ -1,11 +1,31 @@
+Button, TextField {
+    margin-bottom: 10;
+}
+
 FlexboxLayout {
     align-items: center;
     background-size: cover;
     justify-content: center;
 }
 
+Image {
+    height: 70;
+    margin-bottom: 20;
+}
+
 StackLayout {
     background-color: #f0f0f0;
     padding: 10 16;
     width: 300;
+}
+
+TextField {
+    color: black;
+    placeholder-color: #c4afb4;
+}
+
+.btn-primary {
+    background-color: #cb1d00;
+    margin-left: 0;
+    margin-right: 0;
 }
