@@ -6,4 +6,10 @@ import { Component } from "@angular/core";
     styleUrls: [ "login.component.css" ],
     templateUrl: "login.component.html"
 })
-export class LoginComponent {}
+export class LoginComponent {
+
+    submit() {
+        console.log('hello');
+    }
+    
+}
