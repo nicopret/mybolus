@@ -30,3 +30,11 @@ TextField {
     margin-left: 0;
     margin-right: 0;
 }
+
+.dark {
+    background-color: #301217;
+}
+
+.dark TextField {
+    color: #c4afb4;
+}
